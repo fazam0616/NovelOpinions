@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{url_for('static',  filename='css/search.css')}}">
+        <title>Search Book</title>
+
+    </head>
+    <body>
+        <div id="search">
+            <h1>Search For Books</h1>
+            <p>Title:</p>
+            <input id="title"></input>
+            <p>Author:</p>
+            <input id="author"></input>
+            <p>STart Time:</p>
+            <input id ="start"></input>
+            <p>End Time:</p>
+            <input id ="end"></input>
+            <input id='partial' type="checkbox" value='true' checked/>
+            <p id='partialTag'>Include Partial Matches</p>
+            <br>
+            <p id="error">null</p>
+            <button id="submit" onclick="searchBooks()">Add Book</button>
+        </div>
+        <div id ='results'>
+        </div>
+        <script src="{{url_for('static',  filename='js/menu.js')}}"></script>
+        <script src="{{url_for('static',  filename='js/search.js')}}"></script>
+    </body>
+</html>

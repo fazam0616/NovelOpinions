@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{url_for('static',  filename='css/style.css')}}">
+        <link rel="stylesheet" href="{{url_for('static',  filename='css/addBook.css')}}">
+        <title>Add Book</title>
+
+    </head>
+    <body>
+        <div id ="addBookForm">
+            <h1>Add Book</h1>
+            <p>Title:</p>
+            <input id="title"></input>
+            <p>Authors, Separated By Commas:</p>
+            <input id="authors"></input>
+            <p>Year Published:</p>
+            <input id ="year"></input>
+            <p id="error"></p>
+            <button id="submit" onclick="addBook()">Add Book</button>
+        </div>
+        <script src="{{url_for('static',  filename='js/menu.js')}}"></script>
+        <script src="{{url_for('static',  filename='js/addBook.js')}}"></script>
+    </body>
+</html>

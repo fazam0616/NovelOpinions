@@ -1,0 +1,47 @@
+#search{
+    width: 30%;
+    height: auto;
+    margin: auto;
+    background-color: #888888;
+    padding: 1%;
+}
+
+h1{
+    text-align: center;
+}
+
+input{
+    border-width: 0;
+    position: relative;
+    display: inline-block;
+    width: 98%;
+    margin-top: 0;
+    margin-bottom: 2%;
+}
+
+p {
+    margin: 0;
+}
+
+#error {
+    display: inline;
+    color: #ff0000;
+    margin-bottom: 2%
+}
+
+#partialTag{
+    display: inline;
+    margin-bottom: 2%
+}
+
+#partial{
+    display: inline;
+    width: 4%;
+}
+
+button#submit{
+    display: inline;
+    text-align: right;
+    float: right;
+    margin-bottom: 2%
+}
